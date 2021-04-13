@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Educaci&oacute;n vial</title>
+		<style>
+            h1{
+                font-size:500%;
+                padding-bottom: 0px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+			    text-align:center;
+                animation:glowgtitle 5s ease-in-out infinite alternate;
+                font-family: Copperplate, fantasy;
+            }
+            div{
+                margin: 15px;
+	            border:black 2px solid;
+                border-radius: 10px; 
+            }
+            p{
+                text-align:center;
+                font-size: 300%;
+                font-family: monaco, monospace;
+                animation: none;
+                color:black;
+                margin-top: 90px;
+            }
+            {
+                animation: glowred 1s ease-in-out infinite alternate;
+            }
+            div.CajaRoja{
+                background-color:red;
+                width: 260px;
+                height: 260px;
+                border-radius: 50%;
+                animation: glowred 1s ease-in-out infinite alternate;
+            }
+            div.CajaAmarilla{
+                background-color:yellow;
+                width: 260px;
+                height: 260px;
+                border-radius: 50%;
+                animation: glowyellow 1s ease-in-out infinite alternate;
+            }
+            div.CajaVerde{
+                background-color:green;
+                width: 260px;
+                height: 260px;
+                border-radius: 50%;
+                animation: glowgreen 1s ease-in-out infinite alternate;
+            }
+            div.semaforo{
+                background-color:rgb(31, 31, 31);
+                width: 16%;
+                height: 850px;
+                margin: auto;
+            }
+            body{
+                background-image: url("https://papers.co/wallpaper/papers.co-nv99-city-night-light-car-dark-nature-23-wallpaper.jpg");
+                background-color: aquamarine;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            @-webkit-keyframes glowred {
+                from {
+                    background-color:#ff0202;
+                }
+                
+                to {
+                    background-color:#d14242;
+                }
+            }
+            @-webkit-keyframes glowyellow {
+                from {
+                    background-color: #ffd902;
+                }
+                
+                to {
+                    background-color: #da7110;
+                }
+            }
+            @-webkit-keyframes glowgreen {
+                from {
+                    background-color: #4deb5a;
+                }
+                
+                to {
+                    background-color:#2e8d2e;
+                }
+            }
+            @-webkit-keyframes glowgtitle {
+                from {
+                    color: red;
+                }
+                
+                to {
+                    color: yellow;
+                }
+
+                to{
+                    color: green;
+                }
+            }
+		</style>
+	</head>
+	<body>
+		<h1>SEM&Aacute;FORO</h1>
+        <div class="semaforo">
+            <div class="CajaRoja">
+                <p>Rojo</p>
+            </div>
+            <div class="CajaAmarilla">
+                <p>Amarillo</p>
+            </div>
+            <div class="CajaVerde">
+                <p>Verde</p>
+            </div>
+        </div>
+	</body>
+</html>
